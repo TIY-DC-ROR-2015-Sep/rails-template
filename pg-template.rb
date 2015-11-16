@@ -64,6 +64,7 @@ after_bundle do
   generate "bootstrap:install", "static"
   generate "bootstrap:layout"
 
+  rake "db:create"
   rake "db:migrate"
 
   git :init
